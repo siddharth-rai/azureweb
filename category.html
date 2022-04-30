@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+  <title>Minimint</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+ li.dropdown:hover > .dropdown-menu {
+    display: block;
+    
+}
+.fade-carousel {
+    position: relative;
+    height: 100vh;
+    right: vh;
+    left:  vh;
+}
+.fade-carousel .carousel-inner .item {
+
+    height: 100vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    opacity: .7;
+    
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+  
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+</style>
+
+<body background="mm2.jpg">
+<div class="container">
+<nav class="navbar navbar-inverse navbar-fixed-top data-spy="affix" data-offset-top="150"">
+   <div class="container-fluid">
+      <div class="navbar-header">
+
+
+         <a class="navbar-brand" href="#">
+         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>Category Menu</a>
+
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Services</a></li>
+        
+        
+        
+
+
+        <li><a href="#">Gallery</a></li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-success">Go</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"> User</span></a></li>
+        <li><a href="#">Contact us</a></li> 
+        <li><a href="#">Logout</a></li>
+        </ul>
+    </div>   
+</nav>
+ 
+
+
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Category-1</a>
+  <a href="#">Category-2</a>
+  <a href="#">Category-3</a>
+  <a href="#">Category-4</a>
+  <a href="#">Category-5</a>
+  <a href="#">Category-6</a>
+  <a href="#">Category-7</a>
+  <a href="#">Category-8</a>
+  <a href="#">Category-9</a>
+  <a href="#">Category-10</a>
+  <a href="#">Category-11</a>
+  <a href="#">Category-12</a>
+  <a href="#">Category-13</a>
+  <a href="#">Category-14</a>
+  <a href="#">Category-15</a>
+  <a href="#">Category-16</a>
+</div>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</div>
+<br>
+
+</body>
+</html>
